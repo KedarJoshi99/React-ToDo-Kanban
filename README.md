@@ -1,8 +1,31 @@
-# React + Vite
+# ToDo-Kanban
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Todo-Kanban is a React-based Kanban board app that allows users to:
 
-Currently, two official plugins are available:
+- Add, delete, and update tasks
+- Assign tasks to other users
+- Manage other users' tasks
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Features
+
+- Kanban style board for visualizing and managing tasks
+- Drag-and-drop functionality for moving tasks between columns
+- Inline task editing
+
+### Goal
+
+The goal of Todo-Kanban is to demonstrate the ability to develop complex & beautiful React-based apps.
+
+### Usage
+
+To use Todo-Kanban, clone the repository and run `npm install`. Then, start the development server with `npm run dev`. The app will be running at http://localhost:3000.
+You can also check out the app at https://KedarJoshi99.github.io/React-ToDo-Kanban.git
+
+### License
+
+Todo-Kanban is licensed under the MIT License.
+
+
+### Additional Information
+
+Todo-Kanban is still under development.
