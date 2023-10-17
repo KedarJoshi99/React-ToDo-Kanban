@@ -1,0 +1,60 @@
+/* Headbar */
+.headbar {
+  width: 100%;
+  padding: 5px 10px;
+  display: flex;
+  margin-bottom: 10px;
+}
+.headbar .left,
+.headbar .mid,
+.headbar .right {
+  width: auto;
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.headbar .left{
+  font-size: 20px;
+  gap: 0.5rem;
+  /* cursor: pointer; */
+}
+.icon{
+  transition: all 0.15s ease;
+}
+.icon:hover{
+  scale: 1.2;
+}
+
+.headbar .mid {
+  justify-content: center;
+}
+.headbar .right {
+  font-size: 20px;
+  justify-content: end;
+  /* cursor: pointer; */
+}
+.headbar .left:hover,
+.headbar .right:hover {
+  text-decoration: underline;
+}
+
+.mid .btnFilter {
+  padding: 5px 10px;
+  border: 1px solid var(--neon-cyan);
+  transition: all 0.15s ease;
+}
+.mid .btnFilter:hover{
+  scale: 1.1;
+}
+
+.btn {
+  border: 1px solid var(--neon-cyan);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.btn.active,
+.btn:hover {
+  background-color: var(--neon-cyan);
+  color: black;
+}

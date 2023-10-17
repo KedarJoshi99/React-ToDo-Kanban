@@ -1,0 +1,26 @@
+.container {
+  --status-color: var(--neon-cyan);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 1rem;
+  overflow: auto;
+}
+
+.customStatusBtn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.customStatusBtn .customInput{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.customStatusBtn .btn{
+  cursor: pointer;
+}

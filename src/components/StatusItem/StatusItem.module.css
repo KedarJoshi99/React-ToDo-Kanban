@@ -1,0 +1,58 @@
+.statusContainer {
+  min-width: 350px;
+  max-width: 500px;
+  flex: 1;
+  --status-color: "";
+}
+
+.status {
+  border: 1px solid var(--status-color);
+  width: 100%;
+  min-height: 46px;
+  height: auto;
+  max-height: 100%;
+  border-radius: 15px;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;  
+}
+
+
+.btn {
+  border: 2px solid var(--statusColor);
+  display: flex;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.btn .icon {
+  fill: var(--statusColor);
+  transition: all 0.15s ease;
+}
+
+.header {
+  padding: 10px 10px 0 10px;
+  display: flex;
+  position: absolute;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: var(--background);
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status:nth-child(2) {
+  margin-top: 50px;
+}
+
+.header span {
+  color: var(--status-color);
+}

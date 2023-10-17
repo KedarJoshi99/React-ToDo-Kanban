@@ -1,0 +1,97 @@
+.taskForm {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;;
+  height: 90%;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 1.2rem;
+  padding: 15px;
+}
+.input {
+  background-color: transparent;
+  border: 1px solid var(--neon-cyan);
+  outline: none;
+}
+.row {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin: 2px 8px;
+}
+
+
+.row label,
+.rowElement label {
+  margin-right: 8px;
+}
+.rowElement select,
+.row input {
+  flex-grow: 2;
+}
+
+.rowElement {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  margin: 2px 8px;
+}
+
+.colElement {
+  margin: 2px 8px;
+  padding: 0 8px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.addTaskBtn {
+  margin-top: 18px;
+  background-color: var(--background);
+  border: 2px solid var(--neon-cyan);
+  padding: 8px 12px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.addTaskBtn:hover,
+.addTaskBtn.active {
+  background-color: var(--neon-cyan);
+  color: black;
+}
+.errorBorder {
+  border-color: var(--neon-red);
+  color: var(--neon-red);
+}
+.errorMessage {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  bottom: 20px;
+  left: 20px;
+  width: 300px;
+}
+
+@media (max-width: 1570px) {
+  .taskForm {
+    width: 40vw;
+  }
+  .row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .rowElement {
+    width: 100%;
+  }
+  .dateSelector {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1570px){
+  .dateSelector {
+    justify-content: start;
+  }
+}

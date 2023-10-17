@@ -1,0 +1,123 @@
+.input_element_container {
+  padding: 0;
+  margin: 0;
+  width: 225px;
+  height: auto;
+  border: 1px solid var(--neon-cyan);
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+  width: auto;
+  position: relative;
+  display: flex;
+}
+.input {
+  background-color: var(--background);
+  border: 1px solid var(--neon-cyan);
+  outline: none;
+}
+
+.calender {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 40px;
+  background-color: var(--background);
+  border: 2px solid var(--neon-cyan);
+  z-index: 1100;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s ease;
+  user-select: none;
+}
+
+.calender.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: all 0.4s ease;
+}
+.calender.inactive {
+  /* display: none; */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.4s ease;
+}
+.selector {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.left,
+.right {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.75rem;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.left:hover,
+.right:hover {
+  background-color: var(--neon-cyan);
+  color: #000;
+}
+
+.month_yr {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.datesContainer,
+.daysContainer {
+  width: 100%;
+  margin: 8px 0;
+  display: flex;
+  font-size: 0.8rem;
+  font-weight: 200;
+  gap: 0.25rem;
+}
+.daysContainer {
+  justify-content: center;
+}
+.datesContainer {
+  flex-wrap: wrap;
+}
+.day {
+  width: 2rem;
+  height: 1.5rem;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blockDay {
+  background-color: var(--neon-cyan);
+  color: black;
+  font-weight: 400;
+}
+.selectable {
+  height: 2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 50%;
+  transition: all 0.15s ease;
+  cursor: pointer;
+}
+.selectable:hover {
+  background-color: var(--neon-cyan);
+  color: black;
+}
+.selectable.active {
+  background-color: var(--neon-cyan);
+  color: black;
+}
+

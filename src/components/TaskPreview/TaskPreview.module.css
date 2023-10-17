@@ -1,0 +1,50 @@
+.container {
+  width: 30vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.row {
+  display: flex;
+  gap: 1.5rem;
+}
+.elementContainer {
+  display: flex;
+  font-weight: 200;
+}
+.mainElement {
+  font-weight: 400;
+}
+
+.description {
+  width: 100% !important;
+  height: auto !important;
+  word-wrap: break-word;
+  word-break: break-all;
+  height: 80px;
+}
+
+.btn {
+  color: var(--neon-cyan);
+  border: 1px solid var(--neon-cyan);
+  background-color: var(--background);
+  padding: 12px 8px;
+  transition: all 0.15s ease;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.btn:hover {
+  background-color: var(--neon-cyan);
+  scale: 1.05;
+  color: var(--background);
+  cursor: "pointer";
+}
+.btn:active {
+  scale: 0.98;
+}

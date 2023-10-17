@@ -1,0 +1,57 @@
+* {
+  font-family: "Prompt";
+  color: var(--neon-cyan);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  background-color: var(--background);
+}
+
+select {
+  padding: 2px 8px;
+  background-color: var(--background);  
+}
+
+select option {
+  background-color: var(--background);
+}
+input {
+  user-select: auto;
+  padding: 2px 8px;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--neon-cyan);
+}
+::-webkit-scrollbar-track {
+  background-color: #1d1d1d;
+}
+
+:root {
+  --neon-red: #ff0000;
+  --neon-green: #00ff00;
+  --neon-blue: #0080ff;
+  --neon-yellow: #ffff00;
+  --neon-pink: #ff00ff;
+  --neon-orange: #ffa500;
+  --neon-teal: #08e87d;
+  --neon-cyan: #37c6f5;
+  --background: #000;
+  --neon-red-secondary: #aa0000;
+  --neon-green-secondary: #00aa00;
+  --neon-blue-secondary: #000055;
+  --neon-yellow-secondary: #d4d400;
+  --neon-pink-secondary: #5500559a;
+  --neon-orange-secondary: #ac700098;
+  --neon-teal-secondary: #005555;
+  --neon-cyan-secondary: #00eeee;
+  --grey: #272727;
+}
