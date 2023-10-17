@@ -88,7 +88,7 @@ function TodoItem({ task, statusHandler, deleteTask, updateTask }) {
               margin: "4px 8px",
               fill:
                 task.priority === "High"
-                  ? "var(--neon-red"
+                  ? "var(--neon-red)"
                   : task.priority === "Medium"
                   ? "orange"
                   : "var(--neon-cyan",

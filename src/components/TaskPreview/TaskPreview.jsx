@@ -135,7 +135,7 @@ function TaskPreview({ task, updateTask, statusList, closeModal, deleteTask }) {
             onChange={onChangeHandler}
           >
             <option value="High"> High</option>
-            <option value="Meduim">Meduim</option>
+            <option value="Medium">Medium</option>
             <option value="Low">Low</option>
           </select>
         </div>
