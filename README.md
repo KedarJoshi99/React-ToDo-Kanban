@@ -19,7 +19,7 @@ The goal of Todo-Kanban is to demonstrate the ability to develop complex & beaut
 ### Usage
 
 To use Todo-Kanban, clone the repository and run `npm install`. Then, start the development server with `npm run dev`. The app will be running at http://localhost:3000.
-You can also check out the app at https://KedarJoshi99.github.io/React-ToDo-Kanban.git
+You can also check out the app [here](https://devwithkd.github.io/React-ToDo-Kanban/)
 
 ### License
 
